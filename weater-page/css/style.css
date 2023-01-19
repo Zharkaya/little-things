@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background: rgb(71, 69, 69);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%; 
+    min-height: 100vh;
+    display: flex;
+}
+#app {
+    margin: auto;      
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    height: 100%;
+    width: 100%;
+}
+#app::before {
+    content: '';    
+    height: 100%;
+    width: 100%;
+    background-color: rgb(129, 129, 129);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: 0;
+}
+.content {
+    padding: 2rem 3rem;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.current-weather-block {
+    padding: 2rem;
+    border: 1px solid #fff;
+    border-radius: 9px;
+}
+.curent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.city {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.date-time {
+    font-size: 1.3rem;
+}
+.current-weather {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon img {
+    width: 80px;
+}
+.icon p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.weather {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.weekly-weathe-block {
+    display: flex;
+    margin: 2rem 0;    
+    border: 1px solid #fff;
+    border-radius: 9px;
+}
+.day-weather {
+    padding: 2rem 0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.day-weather:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+.day-weather .day {
+    margin: 1rem 0;
+    font-size: 1.5rem;    
+}
+.day-weather .date {
+    margin: 1rem 0;    
+}
+.day-weather .icon-day{
+    margin: 1rem 0;    
+}
+.day-weather .icon-day img {
+    width: 100px;
+}
+.day-weather .weather-day {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.change-city {
+    margin: 0.5rem 2rem;
+    float: left;
+}
+.change-city input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    height: 25px;    
+    color: #fff;
+    padding: 0 0.5rem;
+}
+.change-city button {
+    height: 27px;
+    width: 50px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.change-city button:hover {
+    background-color: #fff;
+    color: black;
+}

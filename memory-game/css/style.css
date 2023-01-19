@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    background: rgb(59, 59, 59);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    height: 100vh;
+    display: flex;  
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: #fff;
+    color: rgb(59, 59, 59);
+}
+#app {
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 50vw;
+}
+
+#app .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #fff;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.field {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cart {    
+    width: 180px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0.5rem;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 2rem;
+}
+
+.cart:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #fff;
+    background: url(../img/cover.webp);
+    background-size: 500px;
+    background-position: center;
+    transition: 0.5s;    
+}
+.cart-active::after {  
+    content: "";  
+    height: 0;   
+}
